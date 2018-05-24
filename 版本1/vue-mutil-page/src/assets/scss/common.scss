@@ -1,0 +1,359 @@
+@import './base/color.scss';
+
+*{
+   padding:0;
+   margin: 0;
+   font-size:14px;
+   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+
+}
+body{
+  overflow:hidden;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased
+}
+html,body,#app,.app-left,.app-right{
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
+.table{
+  display: table;
+}
+.table-cell{
+  display: table-cell;
+}
+.fh{
+  height: 100%;
+}
+.w1{
+  width: 1%;
+}
+.fw{
+  width: 100%;
+}
+.pdl10{
+  padding-left:10px;
+}
+.pdr10{
+  padding-right:10px;
+}
+.pdb10{
+  padding-bottom:10px;
+}
+.pdt10{
+  padding-top:10px;
+}
+.mgl10{
+  margin-left: 10px;
+}
+.mgt10{
+  margin-top: 10px;
+}
+.mgb10{
+  margin-bottom: 10px;
+}
+.mgb30{
+  margin-bottom: 30px;
+}
+.mgb50{
+  margin-bottom: 50px;
+}
+.mgr10{
+  margin-right: 10px;
+}
+.mgl5{
+  margin-left: 5px;
+}
+.mgt5{
+  margin-top: 5px;
+}
+.mgb5{
+  margin-bottom: 5px;
+}
+.mgr5{
+  margin-right: 5px;
+}
+.mgl12{
+  margin-left: 12px;
+}
+.mgt12{
+  margin-top: 12px;
+}
+.mgb12{
+  margin-bottom: 12px;
+}
+.mgr12{
+  margin-right: 12px;
+}
+.txtR{
+  text-align:right;
+}
+.txtL{
+  text-align:left;
+}
+.txtC{
+  text-align:center;
+}
+.displayIB{
+  display: inline-block;
+
+}
+
+.w160 {
+  &.el-input{
+    width: 160px;
+  }
+  & .el-input{
+    width: 160px;
+  }
+}
+.w260 {
+  &.el-input{
+    width: 260px;
+  }
+  & .el-input{
+    width: 260px;
+  }
+}
+.fl{
+  float:left;
+
+}
+.fr{
+  float:right;
+}
+.clearfix{
+    *zoom:1;
+}
+.clearfix:after{
+    display:block;content:" ";height:0;visibility:hidden;clear:both;
+}
+.pointer{
+    cursor: pointer;
+}
+.btn-white{
+    background: #fff!important;
+    border: 1px solid #d8dce5!important;
+    color: #5a5e66!important;
+}
+
+.w80{
+  width: 80%;
+}
+.mainC{
+  color:$mainC!important;
+}
+.warnC{
+  color:$warnC!important;
+}
+.dangerC{
+  color:$dangerC!important;
+}
+.fs24{
+  font-size:24px;
+}
+.fs18{
+  font-size:18px;
+}
+.fs16{
+  font-size:16px;
+}
+.emphasize{
+  color:$dangerC;
+  font-size:16px;
+  margin:0 5px;
+}
+.verticalT{
+  vertical-align:top!important;
+}
+.center{
+  text-align: center;
+}
+.red{
+  color: #F00;
+}
+.gray {
+  color: #a8b0c6;
+}
+.mgr20{
+  margin-right: 20px;
+}
+.mgt20{
+  margin-top: 20px;
+}
+
+.mgl20{
+  margin-left: 20px;
+}
+.mgl21{
+  margin-left: 21px;
+}
+.mgl22{
+  margin-left: 22px;
+}
+.mgl23{
+  margin-left: 23px;
+}
+.mgl24{
+  margin-left: 24px;
+}
+.mgl25{
+  margin-left: 25px;
+}
+.mgl26{
+  margin-left: 26px;
+}.mgl27{
+  margin-left: 27px;
+}.mgl28{
+  margin-left: 28px;
+}.mgl29{
+  margin-left: 29px;
+}.mgl30{
+  margin-left: 30px;
+}.mgl32{
+  margin-left: 32px;
+}.mgl34{
+  margin-left: 34px;
+}
+.mgt30{
+  margin-top: 30px;
+}
+.pdl34{
+  padding-left:34px;
+}
+.pd10{
+  padding: 10px;
+}
+.pdl24{
+  padding-left:24px;
+}
+.mgb20{
+  margin-bottom: 20px;
+}
+.box{
+  box-sizing: border-box;
+}
+
+.borderR{
+  border-right: 1px solid #DDD;
+}
+.borderL{
+  border-left: 1px solid #DDD;
+}
+.borderT{
+  border-top: 1px solid #DDD;
+}
+.borderB{
+  border-bottom: 1px solid #DDD;
+}
+
+.input-helper{
+  color:#9b9b9b;
+  font-size:13px;
+  padding:5px 0 5px 110px;
+}
+
+.input-warning{
+  color:#F00;
+  font-size:14px;
+  padding:5px 0 5px 110px;
+}
+
+.j-resize{
+  overflow: auto;
+}
+
+.el-tooltip__popper{
+  & a{
+    color: #129fdd;
+    text-decoration: underline;
+    padding:0 2px;
+  }
+}
+.el-dropdown-link{
+  cursor: pointer;
+}
+.el-switch__label{
+  &.is-active{
+    color: $mainC;
+  }
+}
+.el-switch{
+  &.is-checked .el-switch__core{
+    border-color: $mainC;
+    background-color: $mainC;
+  }
+}
+.el-step__head{
+  &.is-finish{
+    border-color: $mainC;
+    color:$mainC; 
+  }
+}
+.el-step__title{
+  &.is-finish{
+    color:$mainC; 
+  }
+}
+
+.rela{
+  position: relative;
+}
+
+.a-btn{
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.a-button{
+  color:$mainC;
+  &:hover{
+    text-decoration:underline;
+  }
+}
+
+.search-container{
+  position: relative;
+  height: 30px;
+  & .opts-btns{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.txtColor{
+  color:#999;
+}
+.txtRed{
+  color:#F00;
+}
+.txtBold{
+  color:#333;
+  font-weight: bold;
+}
+.static{
+  position: static !important;
+}
+.fz10{
+  font-size: 10px;
+}
+
+.formitem-desc{
+  margin-top:5px;
+  color:#999;
+  font-size:10px;
+}
+
+.el-table{
+  th,td{
+    text-align: center !important;
+  }
+}

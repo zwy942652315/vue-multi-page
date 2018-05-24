@@ -1,0 +1,36 @@
+@import './base/color.scss';
+.el-button--primary{
+	color:#fff;
+	background-color:$btnC !important;
+	border-color:$btnC !important;
+	&:hover,
+	&:focus{
+		color:#fff;
+		background-color:#ffae33 !important;
+		border-color:#ffae33 !important;
+	}
+	&:active{
+		color:#fff;
+		background-color:#ffae33 !important;
+		border-color:#ffae33 !important;
+	}
+	&.is-disabled,
+	&.is-disabled:active,
+	&.is-disabled:focus,
+	&.is-disabled:hover{
+		color:#fff;
+		background-color:#8DE0D5;
+		border-color:#8DE0D5;
+	}
+}
+.v-table-body-cell{
+    padding:0 3px;
+    margin: 0;
+    white-space: normal !important;
+    word-wrap: normal;
+    overflow:hidden;
+    border-width: 0;
+    border-style: solid;
+    border-color: rgba(221, 221, 221, 1);
+    text-overflow: ellipsis;
+}

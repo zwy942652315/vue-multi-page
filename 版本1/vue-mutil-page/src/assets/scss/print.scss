@@ -1,0 +1,116 @@
+/* 表单样式 */
+  .txtI30{
+    text-indent: 30px;
+  }
+  .form-box {
+    width: 800px;
+    // height: 100%;
+    overflow: auto;
+    background: #fff;
+    padding: 20px 30px 30px 30px;
+    .form-content-title{
+      text-align: center;
+      line-height: 40px;
+    }
+    .form-section{
+      line-height: 35px;
+      color: #4a4a4a;
+      .form-section-item{
+        // text-indent: 25px;
+      }
+    }
+    .first-title{
+      font-size: 18px;
+      line-height: 30px;
+    }
+    .second-title{
+      font-size: 16px;
+      line-height: 30px;
+    }
+    .form-tip{
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #0774b3;
+      margin-right: 7px;
+      vertical-align: middle;
+    }
+    .form-summary{
+      margin: 24px 0;
+      .el-input__inner{
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    .form-footer{
+      margin-bottom: 80px;
+    }
+    .form-content-itemTitle{
+      border-top: 1px solid #DDD;
+      border-bottom: 1px solid #DDD;
+      padding: 10px 5px;
+      background: #e3f3ed;
+      color: #336a54;
+    }
+  }  
+  .form-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .form-btnBox{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999999999999999;
+  }
+
+  .v-table-rightview .v-table-body, .v-table-rightview .v-table-footer{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
+  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+  // ::-webkit-scrollbar
+  // {
+  //     width: 0;
+  // }
+  
+  /* 打印样式 */
+  @media print {
+    body {
+      width: 100% !important;
+      height: 100%;
+      background: #fff !important;
+    }
+    .noprint{
+      display: none;
+    }
+    // .form-footer{
+    //     position: absolute;
+    //     bottom: 10px;
+    //     right: 30px;
+    // }
+  /* 文本框样式 */
+    /* 打印时，隐藏富文本编辑器的头部 */
+    .edui-default {
+      page-break-inside: avoid; // page-break-inside 属性仅支持 auto 和 avoid，表示在元素内允许或禁止分页。
+      .edui-editor-toolbarbox{
+        display: none;
+      }
+    }
+  
+    @page {
+      size: A4;
+      width: 100%;
+      // margin: 3.7cm 2.6cm 3.5cm 3cm;
+      margin-left: 3cm;
+      table {
+        page-break-after:always; // 表示在该元素之前（或之后）强制或禁止分页
+      }
+       /* 页面内容区域底部添加一条 1px 的灰线 */
+      @bottom-left, @bottom-center, @bottom-right {
+        border-top: 1px solid #000;
+      }
+    }
+  }

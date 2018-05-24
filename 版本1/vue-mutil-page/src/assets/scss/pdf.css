@@ -1,0 +1,8 @@
+#print-area{
+    padding: 20px;
+}
+/* 文本框样式 */
+/* 打印时，隐藏富文本编辑器的头部 */
+.edui-default .edui-editor-toolbarboxinner{
+    display: none;
+}
